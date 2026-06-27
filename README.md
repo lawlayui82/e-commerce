@@ -30,6 +30,8 @@ This project is an e-commerce core backend built using Spring Boot. The main foc
 | `name` | String | Not Null | Name Prodcut |
 | `price` | BigDecimal | Not Null | Price product |
 | `stock` | Integer | Not Null | Number of stocks available |
+| `created_at` | DateTime | Not Null | Row creation date |
+| `update_at` | DateTime | Not Null | Row update date |
 
 ### 2. Order Entity
 | Field | Type | Constraint | Information |
@@ -39,6 +41,8 @@ This project is an e-commerce core backend built using Spring Boot. The main foc
 | `quantity` | Integer | Not Null | Quantity purchased |
 | `total_price` | BigDecimal | Not Null | `price` x `quantity` |
 | `status` | enum(PENDING_PAYMENT, PAID, FILED) | current status |  
+| `created_at` | DateTime | Not Null | Row creation date |
+| `update_at` | DateTime | Not Null | Row update date |
 
 ---
 
